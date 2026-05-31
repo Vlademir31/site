@@ -67,15 +67,37 @@
 
         <form action="">
 
-                <label for="projeto">Envie suas sugestões de projetos:</label><br>
-                <input type="text" id="projeto" name="projeto" placeholder="Digite sua sugestão aqui"><br>
-                <input type="submit" value="Enviar">
+            <label for="nome">Nome</label><br><br>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui" required><br><br>
+            <input type="submit" value="Enviar"><br><br>
 
-                <label for="feedback">Deixe seu feedback:</label><br>
-                <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Digite seu feedback aqui"></textarea><br>
-                <input type="submit" value="Enviar Feedback">
+            <label for="feedback">Descreva o seu
+                projeto:</label><br><!-- Área de texto para descrever a ideia do projeto -->
+            <textarea id="Ideia" name="Ideia" rows="4" cols="50" placeholder="Descreva sua ideia aqui" required></textarea><br><br>
+            <input type="submit" value="Enviar Ideia"><br><br>
 
+            <label for="desenvolvimento">Desenvolvimento para:</label>requerid
+            <br><br><!-- Menu suspenso para selecionar o tipo de desenvolvimento -->
+            <select id="desenvolvimento" name="desenvolvimento">
+                <option value="web">Web</option>
+                <option value="mobile">Mobile</option>
+                <option value="desktop">Desktop</option>
+                <option value="outros">Web, Mobile, Desktop</option>
+            </select><br><br>
 
+            <label for="tecnologias">Tecnologias utilizadas:</label>requerid <br>
+            <!-- Caixa de seleção para escolher as tecnologias utilizadas no projeto -->
+            <input type="checkbox" id="html" name="tecnologias" value="html">
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css" name="tecnologias" value="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript" name="tecnologias" value="javascript">
+            <label for="javascript">JavaScript</label><br><br>
+
+            <label for="mensagem">mensagem</label><br><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50"
+                placeholder="Digite sua mensagem aqui"></textarea><br><br>
+            <input type="submit" value="Enviar Mensagem"><br><br>
         </form>
         <footer>
     </section>
