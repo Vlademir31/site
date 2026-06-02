@@ -1,79 +1,461 @@
-* {
-    box-sizing: border-box;
-}
-header{
-    background-color: rgb(4, 77, 99);
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-main {
-    padding: 20px;
-    
-}
-section img {
-    width: 210px;
-    height: 220px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    text-align: center;
-}
-h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-p {
-    font-size: 16px;
-    margin-bottom: 20px;
-}
-h2 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-body {
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    background-color: rgb(225, 231, 233);
-    color: rgb(27, 26, 26);
-    margin: 0;
-    padding: 0;
-}
-.whatsapp {
-    color: rgb(7, 145, 37);
-    font-size: 24px;
-}
-.email {
-    color: rgb(4, 77, 99);
-    font-size: 24px;
-}
-.linkedin {
-    color: rgb(4, 77, 99);
-    font-size: 24px;
-}
-.location {
-    color: rgb(4, 77, 99);
-    font-size: 24px;
-}
-.contact-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-}
-.contact-item .label {
-    font-weight: bold;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.contact-item .value {
-    color: rgb(27, 26, 26);
-    font-size: 16px;
-}
-footer {
-    background-color: rgb(4, 77, 99);
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-footer p {
-    margin: 5px 0;
-}
-
+* { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        html {
+            font-size: 16px;
+        }
+        
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            line-height: 1.6; 
+            color: #333;
+            overflow-x: hidden;
+        }
+        
+        /* HEADER RESPONSIVO */
+        header { 
+            background: linear-gradient(135deg, #2c3e50, #3498db); 
+            color: white; 
+            padding: 30px 15px; 
+            text-align: center; 
+        }
+        
+        header h1 { 
+            font-size: 2rem; 
+            margin-bottom: 10px; 
+            line-height: 1.2;
+        }
+        
+        .subtitle { 
+            font-size: 1.1rem; 
+            opacity: 0.95; 
+            font-weight: 300;
+        }
+        
+        /* MAIN RESPONSIVO */
+        main { 
+            max-width: 1100px; 
+            margin: 0 auto; 
+            padding: 30px 15px; 
+        }
+        
+        /* SEÇÕES RESPONSIVAS */
+        section { 
+            margin-bottom: 40px; 
+            padding: 25px; 
+            background: #f8f9fa; 
+            border-radius: 10px; 
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        h2 { 
+            color: #2c3e50; 
+            border-bottom: 3px solid #3498db; 
+            padding-bottom: 10px; 
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        /* IMAGEM RESPONSIVA */
+        img { 
+            max-width: 200px; 
+            width: 100%;
+            height: auto;
+            border-radius: 10px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+            display: block; 
+            margin: 0 auto 20px; 
+        }
+        
+        /* LISTAS RESPONSIVAS */
+        ul { 
+            list-style: none; 
+            padding-left: 0; 
+        }
+        
+        li { 
+            padding: 10px 0; 
+            padding-left: 30px; 
+            position: relative; 
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 0.95rem;
+        }
+        
+        li:before { 
+            content: "✓"; 
+            color: #3498db; 
+            font-weight: bold; 
+            position: absolute; 
+            left: 0; 
+            font-size: 1.2em; 
+        }
+        
+        /* HIGHLIGHT RESPONSIVO */
+        .highlight { 
+            background: #e8f4f8; 
+            padding: 15px; 
+            border-left: 4px solid #3498db; 
+            margin: 15px 0;
+            font-size: 0.95rem;
+        }
+        
+        /* GRID DE HABILIDADES RESPONSIVO */
+        .skills-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+            gap: 15px;
+        }
+        
+        .skill-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 8px; 
+            text-align: center; 
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .skill-card strong { 
+            color: #2c3e50; 
+            display: block; 
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+        
+        .skill-card p {
+            font-size: 0.85rem;
+            color: #666;
+        }
+        
+        /* CONTATO RESPONSIVO */
+        .contact-info { 
+            text-align: center; 
+            font-size: 1rem;
+        }
+        
+        .contact-info a { 
+            color: #3498db; 
+            text-decoration: none; 
+            font-weight: bold;
+        }
+        
+        .contact-info a:hover { 
+            text-decoration: underline; 
+        }
+        
+        /* CARDS DE CONTATO RESPONSIVOS */
+        .contact-item {
+            display: inline-block;
+            margin: 10px 10px;
+            padding: 15px 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            min-width: 140px;
+            vertical-align: top;
+        }
+        
+        .contact-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .contact-item i {
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            display: block;
+        }
+        
+        .contact-item .label {
+            display: block;
+            font-size: 0.8rem;
+            color: #666;
+            margin-bottom: 5px;
+        }
+        
+        .contact-item .value {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: bold;
+            color: #2c3e50;
+            word-break: break-word;
+        }
+        
+        /* CORES DOS ÍCONES */
+        .whatsapp { color: #25D366 !important; }
+        .email { color: #EA4335 !important; }
+        .linkedin { color: #0077B5 !important; }
+        .location { color: #3498db !important; }
+        
+        /* FOOTER RESPONSIVO */
+        footer { 
+            background: #2c3e50; 
+            color: white; 
+            text-align: center; 
+            padding: 20px 15px; 
+            margin-top: 40px;
+            font-size: 0.9rem;
+        }
+        
+        .results { 
+            color: #27ae60; 
+            font-weight: bold;
+            font-size: 0.95rem;
+        }
+        
+        /* ========================================
+           MEDIA QUERIES - ADAPTAÇÃO PARA DIFERENTES TELA
+           ======================================== */
+        
+        /* TABLET (768px - 1024px) */
+        @media screen and (max-width: 1024px) {
+            html {
+                font-size: 15px;
+            }
+            
+            main {
+                padding: 25px 20px;
+            }
+            
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            }
+            
+            .contact-item {
+                margin: 10px;
+                padding: 12px 18px;
+            }
+        }
+        
+        /* MOBILE (até 767px) - Android e iOS */
+        @media screen and (max-width: 767px) {
+            html {
+                font-size: 14px;
+            }
+            
+            header {
+                padding: 25px 10px;
+            }
+            
+            header h1 {
+                font-size: 1.5rem;
+                margin-bottom: 8px;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+            
+            main {
+                padding: 20px 10px;
+            }
+            
+            section {
+                padding: 20px 15px;
+                margin-bottom: 30px;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+                margin-bottom: 15px;
+            }
+            
+            img {
+                max-width: 150px;
+            }
+            
+            li {
+                font-size: 0.9rem;
+                padding: 8px 0;
+                padding-left: 25px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 10px;
+            }
+            
+            .skill-card {
+                padding: 15px 10px;
+            }
+            
+            .skill-card strong {
+                font-size: 0.9rem;
+            }
+            
+            .skill-card p {
+                font-size: 0.75rem;
+            }
+            
+            .contact-item {
+                display: block;
+                width: 100%;
+                margin: 10px 0;
+                padding: 12px 15px;
+                min-width: auto;
+            }
+            
+            .contact-item i {
+                font-size: 1.5rem;
+            }
+            
+            .contact-item .label {
+                font-size: 0.75rem;
+            }
+            
+            .contact-item .value {
+                font-size: 0.85rem;
+            }
+            
+            .highlight {
+                padding: 12px;
+                font-size: 0.9rem;
+            }
+            
+            .results {
+                font-size: 0.9rem;
+            }
+            
+            footer {
+                padding: 15px 10px;
+                font-size: 0.8rem;
+            }
+        }
+        
+        /* MOBILE MUITO PEQUENO (até 480px) */
+        @media screen and (max-width: 480px) {
+            html {
+                font-size: 13px;
+            }
+            
+            header h1 {
+                font-size: 1.3rem;
+            }
+            
+            .subtitle {
+                font-size: 0.9rem;
+            }
+            
+            main {
+                padding: 15px 8px;
+            }
+            
+            section {
+                padding: 15px 10px;
+            }
+            
+            h2 {
+                font-size: 1.2rem;
+            }
+            
+            img {
+                max-width: 120px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+            
+            .skill-card {
+                padding: 12px 8px;
+            }
+            
+            .contact-item {
+                padding: 10px 12px;
+            }
+            
+            .contact-item i {
+                font-size: 1.3rem;
+            }
+            
+            li {
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* DESKTOP GRANDE (acima de 1200px) */
+        @media screen and (min-width: 1200px) {
+            html {
+                font-size: 16px;
+            }
+            
+            main {
+                max-width: 1200px;
+                padding: 40px 30px;
+            }
+            
+            header h1 {
+                font-size: 2.5rem;
+            }
+            
+            .subtitle {
+                font-size: 1.3rem;
+            }
+            
+            section {
+                padding: 30px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .contact-item {
+                margin: 15px 20px;
+                padding: 15px 25px;
+            }
+        }
+        
+        /* TELA MUITO GRANDE (acima de 1400px) */
+        @media screen and (min-width: 1400px) {
+            html {
+                font-size: 18px;
+            }
+            
+            main {
+                max-width: 1300px;
+            }
+            
+            header h1 {
+                font-size: 2.8rem;
+            }
+        }
+        
+        /* ORIENTAÇÃO RETRATO (mobile vertical) */
+        @media screen and (max-width: 767px) and (orientation: portrait) {
+            .contact-item {
+                width: 100%;
+                display: block;
+            }
+        }
+        
+        /* ORIENTAÇÃO PAISAGEM (mobile horizontal) */
+        @media screen and (max-width: 767px) and (orientation: landscape) {
+            img {
+                max-width: 120px;
+            }
+            
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        /* TOQUE (touch devices - Android/iOS) */
+        @media (hover: none) and (pointer: coarse) {
+            .contact-item:hover {
+                transform: none;
+            }
+            
+            .contact-item:active {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            }
+        }
