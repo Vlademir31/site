@@ -41,3 +41,39 @@ body {
     color: rgb(4, 77, 99);
     font-size: 24px;
 }
+.email {
+    color: rgb(4, 77, 99);
+    font-size: 24px;
+}
+.linkedin {
+    color: rgb(4, 77, 99);
+    font-size: 24px;
+}
+.location {
+    color: rgb(4, 77, 99);
+    font-size: 24px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contact-item .label {
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contact-item .value {
+    color: rgb(27, 26, 26);
+    font-size: 16px;
+}
+footer {
+    background-color: rgb(4, 77, 99);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer p {
+    margin: 5px 0;
+}
+
